@@ -73,6 +73,6 @@ echo
 echo "======================================================================"
 echo
 
-ddev config --project-type=drupal11 --docroot=web
+ddev config --project-type=drupal --docroot=web
 ddev start
 ddev ssh
