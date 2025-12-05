@@ -1,5 +1,4 @@
-TTS Drupal Template
-===================
+# TTS Drupal Template
 
 This repository aims to simplify the process of getting a `drupal/cms` app running in cloud.gov
 
@@ -16,7 +15,7 @@ PRs and ideas for improvement VERY much welcome.
 1. At that command line, run `./init.sh`
 1. Use terraform to deploy your app
 
-### Terraform deploy
+### Deploy to Cloud.gov
 
 Follow these steps (starting from within your app directory) to deploy your app
 
