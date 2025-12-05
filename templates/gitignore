@@ -117,5 +117,6 @@ spatial-data/*.txt
 **/.terraform/*
 secrets.*.tfvars
 terraform.tfstate*
+.terraform
 
 .ddev/
