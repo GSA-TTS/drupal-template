@@ -1,6 +1,6 @@
 # create a cloud.gov space to host the app and services
 module "space" {
-  source = "github.com/gsa-tts/terraform-cloudgov//cg_space?ref=v2.2.0"
+  source = "github.com/gsa-tts/terraform-cloudgov//cg_space?ref=v2.4.1"
 
   cf_org_name          = var.cf_org_name
   cf_space_name        = var.cf_space_name
@@ -11,7 +11,7 @@ module "space" {
 
 # provision a database, s3 bucket, and deploy the application
 module "drupal" {
-  source = "github.com/gsa-tts/terraform-cloudgov//drupal?ref=v2.2.0"
+  source = "github.com/gsa-tts/terraform-cloudgov//drupal?ref=v2.4.1"
 
   cf_org_name   = var.cf_org_name
   cf_space      = module.space.space

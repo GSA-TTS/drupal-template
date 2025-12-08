@@ -54,8 +54,6 @@ echo "======================================================================"
 echo
 
 cd "$output_dir"
-sed 's/ddev launch/ddev ssh/' launch-drupal-cms.sh > launch-drupal-cms-ssh.sh
-chmod +x launch-drupal-cms-ssh.sh
 chmod +x init.sh
 
 echo
@@ -75,4 +73,6 @@ echo
 echo "======================================================================"
 echo
 
-exec ./launch-drupal-cms-ssh.sh
+ddev config --project-type=drupal --docroot=web
+ddev start
+ddev ssh

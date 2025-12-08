@@ -115,7 +115,7 @@ spatial-data/*.txt
 # Terraform files
 .terraform.lock.hcl
 **/.terraform/*
-secrets.*.tfvars
+*.tfvars
 terraform.tfstate*
 
 .ddev/
