@@ -38,7 +38,6 @@ Follow these steps to deploy your app:
 
 #### Log in to your Drupal site
 
-1. Run `terraform output` and copy the value of `credentials_id`
 1. View the root credentials for logging in:
 
     ```shell
@@ -47,7 +46,12 @@ Follow these steps to deploy your app:
 
     Make note of the `ROOT_USER_NAME` and `ROOT_USER_PASS` credentials
 
-1. From `terraform output`, visit the URL in `route`
+1. From `terraform output`, visit the URL in `route`:
+
+    ```shell
+    terraform output -raw route
+    ```
+
 1. Click the "Log in" button on the page
 1. Use the `ROOT_USER_NAME` and `ROOT_USER_PASS` values from the root user credentials to log in
 
