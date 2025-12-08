@@ -42,7 +42,7 @@ Follow these steps to deploy your app:
 1. View the root credentials for logging in:
 
     ```shell
-    cf curl "/v3/service_instances/<credentials-id>/credentials"
+    cf curl "/v3/service_instances/$(terraform output -raw credentials_id)/credentials"
     ```
 
     Make note of the `ROOT_USER_NAME` and `ROOT_USER_PASS` credentials
