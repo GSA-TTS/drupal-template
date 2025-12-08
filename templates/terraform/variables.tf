@@ -1,11 +1,11 @@
 variable "cf_org_name" {
   type        = string
-  description = "cloud.gov organization name"
+  description = "Organization name on Cloud.gov where Drupal should be deployed"
 }
 
 variable "cf_space_name" {
   type        = string
-  description = "cloud.gov space name for app deployment"
+  description = "Space name on Cloud.gov in `cf_org_name` where Drupal should be deployed. **This space will be created.**"
 }
 
 variable "app_name" {
@@ -15,7 +15,7 @@ variable "app_name" {
 
 variable "cf_users" {
   type        = set(string)
-  description = "Set of cloud.gov usernames that can deploy the application"
+  description = "Set of Cloud.gov usernames that can deploy the application"
 }
 
 variable "allow_ssh" {
